@@ -13,6 +13,7 @@ function init() {
 
   function populateVoices() {
     voices = synth.getVoices();
+    if (voices.length === 0) return;
     voiceSelect.innerHTML = ""; // Clear any existing options
 
     voices.forEach((voice, index) => {
@@ -30,9 +31,9 @@ function init() {
   }
 
   // Some browsers load voices async
-  if (speechSynthesis.onvoiceschanged !== undefined) {
-    speechSynthesis.onvoiceschanged = populateVoices;
-  }
+  //if (speechSynthesis.onvoiceschanged !== undefined) {
+    //speechSynthesis.onvoiceschanged = populateVoices;
+  //}
 
   talkButton.addEventListener("click", () => {
     const text = textInput.value;
