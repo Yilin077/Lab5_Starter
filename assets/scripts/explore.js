@@ -7,7 +7,7 @@ function init() {
   const voiceSelect = document.getElementById("voice-select");
   const talkButton = document.querySelector("button");
   const textInput = document.getElementById("text-to-speak");
-  const faceImage = document.querySelector("img");
+  const faceImage = document.querySelector("#explore img");
 
   let voices = [];
 
