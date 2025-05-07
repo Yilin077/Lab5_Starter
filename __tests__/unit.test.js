@@ -17,7 +17,7 @@ test('valid phone number with parentheses', () => {
 });
 
 test('invalid phone number missing digits', () => {
-  expect(isPhoneNumber("1234")).toBe(false);
+  expect(isPhoneNumber("123-456")).toBe(false);
 });
 
 test('invalid phone number with wrong format', () => {
