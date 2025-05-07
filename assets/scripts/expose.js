@@ -19,8 +19,8 @@ function init() {
 
     // Set horn image and audio
     if (horn === "air-horn") {
-      hornImage.src = "assets/images/air-horn.svg";
-      hornAudio.src = "assets/audio/air-horn.mp3";
+      hornImage.src = 'assets/images/air-horn.svg';
+      hornAudio.src = 'assets/audio/air-horn.mp3';
     } else if (horn === "car-horn") {
       hornImage.src = "assets/images/car-horn.svg";
       hornAudio.src = "assets/audio/car-horn.mp3";
