@@ -72,7 +72,7 @@ test('invalid date with wrong order', () => {
 });
 
 test('invalid date missing slashes', () => {
-  expect(isDate("13402023")).toBe(false);
+  expect(isDate("3202023")).toBe(false);
 });
 
 test('valid 3-digit hex color with #', () => {
