@@ -22,13 +22,13 @@ function init() {
       voiceSelect.appendChild(option);
     });
   }
+  populateVoices();
   if (synth.onvoiceschanged !== undefined) {
     synth.onvoiceschanged = () => {
       populateVoices(); // Now voices will be available
     };
   }
 
-  //populateVoices();
   // Some browsers load voices async
   if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = populateVoices;
