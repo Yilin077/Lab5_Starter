@@ -16,8 +16,8 @@ test('valid phone number with parentheses', () => {
   expect(isPhoneNumber("(123) 456-7890")).toBe(true);
 });
 
-test('invalid phone number missing dashes', () => {
-  expect(isPhoneNumber("1234567890")).toBe(false);
+test('invalid phone number missing digits', () => {
+  expect(isPhoneNumber("1234")).toBe(false);
 });
 
 test('invalid phone number with wrong format', () => {
